@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causas</title>
+    <link rel="shortcut icon" href="./Mi proyecto.png" type="image/x-icon">
+   
+
+
+</head>
+<body>
+
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: lightseagreen;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #373766, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, hsla(231, 15%, 18%, 0.603), hsla(249, 31%, 31%, 0.605)),url(/portada3.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 150px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 50px;
+    font-weight: 300;
+    color:white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+.questions{
+    text-align: center;
+}
+
+.questions__container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.questions__padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid #5454D4;
+    border-radius: 6px;
+}
+
+.questions__padding--add{
+    padding-bottom: 30px;
+}
+
+.questions__answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+
+.questions__title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+
+.questions__arrow{
+    border-radius: 50%;
+    background-color:white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition:  transform .3s;
+}
+
+.questions__arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.questions__show{
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+    font-size: 20px;
+}
+
+.questions__img{
+    display: block;
+    width: 40px;
+}
+
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+
+    </style>
+
+
+
+
+
+    <header>
+        <nav>
+            <a href="./index.html">inicio</a>
+            <a href="./Causas.html">Causas</a>
+            <a href="./Consecuencias.html">Consecuencias</a>
+            <a href="./Efectos.html">Efectos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Prevenciones</h1>
+            <h2>breves palabras</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+    <main>
+        
+
+
+
+
+
+            
+                        <section class="questions__container">
+
+                            <article class="questions__padding">
+                                <div class="questions__answer">
+                                    <h3 class="questions__title">Prevenciones
+                                        <span class="questions__arrow">
+                                            <img src="./up-arrow-circle-regular-24.png" class="questions__img">
+                                        </span>
+                                    </h3>
+            
+                                    <p class="questions__show">La prevención de la drogadicción es esencial para evitar sus efectos perjudiciales. Implica educar a los jóvenes sobre los riesgos y las consecuencias del consumo de drogas. También se centra en fortalecer las habilidades de toma de decisiones y la resistencia a la presión de grupo.</p>
+                                </div>
+                            </article>
+
+                            <article class="questions__padding">
+                                <div class="questions__answer">
+                                    <h3 class="questions__title">Estrategias
+                                        <span class="questions__arrow">
+                                            <img src="./up-arrow-circle-regular-24.png" class="questions__img">
+                                        </span>
+                                    </h3>
+            
+                                    <p class="questions__show">Las estrategias de prevención de la drogadicción incluyen programas escolares de educación sobre drogas, promoción de actividades recreativas y deportivas, así como la promoción de un entorno familiar y social que fomente hábitos saludables.</p>
+                                </div>
+                            </article>
+            
+                            <article class="questions__padding">
+                                <div class="questions__answer">
+                                    <h3 class="questions__title">Enfoques
+                                        <span class="questions__arrow">
+                                            <img src="./up-arrow-circle-regular-24.png" class="questions__img">
+                                        </span>
+                                    </h3>
+            
+                                    <p class="questions__show">Los enfoques de prevención pueden ser universales (dirigidos a toda la población), selectivos (dirigidos a grupos con factores de riesgo específicos) o indicados (dirigidos a individuos en riesgo alto). Un enfoque integral considera factores biológicos, psicológicos y sociales que influyen en la decisión de consumir drogas.</p>
+                                </div>
+                            </article>
+            
+                            <article class="questions__padding">
+                                <div class="questions__answer">
+                                    <h3 class="questions__title">Papeles
+                                        <span class="questions__arrow">
+                                            <img src="./up-arrow-circle-regular-24.png" class="questions__img">
+                                        </span>
+                                    </h3>
+            
+                                    <p class="questions__show">Diversos actores desempeñan un papel en la prevención de la drogadicción. Los padres y cuidadores juegan un papel crucial al comunicar y establecer límites claros. Las escuelas pueden proporcionar educación y actividades extracurriculares que promuevan estilos de vida saludables. Las comunidades pueden crear entornos seguros y accesibles para los jóvenes.</p>
+                                </div>
+                            </article>
+                        </section>
+
+            
+        <script>
+            (function(){
+    const titleQuestions = [...document.querySelectorAll('.questions__title')];
+    console.log(titleQuestions)
+
+    titleQuestions.forEach(question =>{
+        question.addEventListener('click', ()=>{
+            let height = 0;
+            let answer = question.nextElementSibling;
+            let addPadding = question.parentElement.parentElement;
+
+            addPadding.classList.toggle('questions__padding--add');
+            question.children[0].classList.toggle('questions__arrow--rotate');
+
+            if(answer.clientHeight === 0){
+                height = answer.scrollHeight;
+            }
+
+            answer.style.height = `${height}px`;
+        });
+    });
+})();
+        </script>             
+
+
+</body>
+</html>
+
+
