@@ -489,15 +489,7 @@ body {
     margin-bottom: 20px;
 }
 
-.cta {
-    display: inline-block;
-    background-color: #2091F9;
-    justify-self: center;
-    color: #fff;
-    text-decoration: none;
-    padding: 13px 30px;
-    border-radius: 32px;
-}
+
 
 /* About */
 
@@ -1121,20 +1113,26 @@ body {
 }
 
 
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
 
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+}
 
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
     </style>
     
-
-
-
-
-
-
-
-
-
-
     <header class="hero">
         <nav class="nav container">
             <div class="nav__logo">
@@ -1162,7 +1160,7 @@ body {
                     <a href="#consejos" class="nav__links">Consejos</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#conclusiones" class="nav__links">Conclusiones</a>
+                    <a href="#videos" class="nav__links">videos</a>
                 </li>
                 <li class="nav__items">
                     <a href="#registrate" class="nav__links">Registrate</a>
@@ -1180,7 +1178,7 @@ body {
             <h1 class="hero__title">Drogas conscientes</h1>
             <p class="hero__paragraph">La drogadicción en jóvenes es un problema serio que afecta la salud y el futuro. La prevención y educación son esenciales para tomar decisiones saludables.</p>
             
-             <a href="#" class="cta">Comienza ahora</a>
+             
         </section>
     </header>
 
@@ -1269,7 +1267,7 @@ body {
                 <div class="knowledege__texts">
                     <h2 class="subtitle">¿Qué son las drogas alucinogenas?</h2>
                     <p class="knowledge__paragraph">Las drogas son sustancias que alteran el cuerpo y el cerebro. Pueden ser adictivas y tener efectos negativos en la salud. Es esencial crear conciencia sobre sus riesgos para prevenir su consumo y proteger la salud y el bienestar de las personas.</p>
-                    <a href="#" class="cta">Entra al curso</a>
+                    
                 </div>
 
                 <figure class="knowledge__picture">
@@ -1440,14 +1438,38 @@ body {
                 </article>
             </section>
 
-            <section class="questions__offer" id="conclusiones">
-                <h2 class="subtitle">¿Qué podemos concluir?</h2>
-                <p class="questions__copy"><p>El Poder de la Prevención: La información es la clave para evitar la trampa de la drogadicción. Conoce los riesgos y toma decisiones informadas para proteger tu bienestar </p> <p>Un Futuro en Tus Manos: Cada elección cuenta. Al evitar las drogas, estás creando un camino hacia un futuro más brillante y saludable para ti y quienes te rodean.</p>
-                    
-                <p>Conexiones Significativas: Mantén relaciones sólidas y significativas. La prevención de la drogadicción comienza con la comunicación abierta y el apoyo mutuo..</p>
-                <a href="#" class="cta">Aprende ahora</a>
+            <section class="questions__offer" id="videos">
+                <h2 class="subtitle">Videos instructivos</h2>
+                
+                
             </section>
         </section>
+        <div class="video-grid">
+            <div class="video-container">
+                <video controls>
+                    <source src="y2mate.com - Pepita Nuggets   Animación sobre los efectos de las drogas_360p.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="y2mate.com - Por qué las campañas contra las adicciones no funcionan_360p.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="La prevención de consumo de alcohol y otras drogas es tarea de todos.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls>
+                    <source src="Concientización sobre las drogas y el alcohol -  Internacional.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -1476,7 +1498,7 @@ body {
                         <a href="#consejos" class="nav__links">Consejos</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#conclusiones" class="nav__links">Conclusiones</a>
+                        <a href="#videos" class="nav__links">Videos</a>
                     </li>
                     <li class="nav__items">
                         <a href="#registrate" class="nav__links">Registrate</a>
@@ -1488,7 +1510,7 @@ body {
 
 
 
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <form class="footer__form" action="https://formspree.io/f/xaygoypk" method="POST">
                 <h2 class="footer__newsletter" id="registrate">Registrate</h2>
                 <div class="footer__inputs">
                     <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
